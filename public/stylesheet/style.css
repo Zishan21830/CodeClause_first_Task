@@ -1,0 +1,92 @@
+/* Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* utility classes */
+.d_flex {
+  display: flex;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f_direction {
+  flex-direction: column;
+}
+.text_align_center {
+  text-align: left;
+}
+input {
+  margin-bottom: 0.6rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+textarea {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+h2 {
+  color: #fff;
+}
+span {
+  color: #fff;
+}
+.padding_on_heading > h2 {
+  padding: 2rem 2rem 2rem 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(319deg, #00e5ff, #ff005b);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+button {
+  padding: 0.5rem 21%;
+  margin: 3rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(152deg, #00e5ff, #ff005b);
+  font-size: 1.2rem;
+}
+
+/* form */
+form {
+  width: 100vw;
+  min-height: 100vh;
+}
+/* personal information */
+.personal_info {
+  width: 48%;
+}
+.personal_info h2 {
+  padding: 2rem 2rem 2rem 0;
+}
+.user_name {
+  justify-content: space-between;
+}
+
+/* project */
+.projects {
+  gap: 2rem;
+}
+.projects > h2 {
+  padding-top: 2rem;
+}
+
+.projects_details {
+  gap: 1.5rem;
+}

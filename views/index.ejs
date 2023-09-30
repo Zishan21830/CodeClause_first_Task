@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- partials -->
+<%- include('partials/header') %>
+
+  <body>
+    <main class="main_section full_width center f_direction">
+      <!-- top section start -->
+      <section class="personal_info d_flex" id="top_section">
+        <section class="top_left_section d_flex f_direction">
+          <div>
+            <h1 class="firstname">
+              <%= body.firstname %>
+            </h1>
+            <h1 class="lastname">
+              <%= body.lastname %>
+            </h1>
+          </div>
+          <div class="top_divider"></div>
+          <h3 class="passion">
+            <%= body.passion %>
+          </h3>
+        </section>
+        <section class="top_right_section d_flex f_direction">
+          <div class="phone">
+            <span>
+              <%= body.phone %>
+            </span><i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="email">
+            <span>
+              <%= body.email %>
+            </span><i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="address">
+            <span>
+              <%= body.address %>
+            </span><i class="fa-solid fa-house"></i>
+          </div>
+        </section>
+      </section>
+      <!-- top section end -->
+
+      <!-- divivder start -->
+      <!-- divider between top section and bottom section -->
+      <div class="divider"></div>
+      <!-- divivder start -->
+
+      <!-- bottom section start -->
+      <section class="bottom_section full_width">
+        <!-- summary section start -->
+        <section class="summary center f_direction">
+          <h3>Summary</h3>
+          <div class="summary_divider"></div>
+          <p class="summary_para">
+            <%= body.summary %>
+          </p>
+        </section>
+        <!-- summary section end -->
+
+        <!-- professional_details section start -->
+        <section class="professional_details d_flex">
+          <!-- professional_skills section start -->
+          <section class="professional_skills">
+
+            <!-- education section start -->
+            <section class="education">
+              <h3>Education</h3>
+              <div class="edu__divider"></div>
+              <div class="education_1">
+                <h5 class="institute_name">
+                  <%= body.education1 %>
+                </h5>
+                <span class="course">
+                  <%= body.course_name1%>
+                </span>
+              </div>
+              <div class="education_2">
+                <h5 class="institute_name">
+                  <%= body.education2 %>
+                </h5>
+                <span class="course">
+                  <%= body.course_name2%>
+                </span>
+              </div>
+            </section>
+            <!-- education section end -->
+
+            <!-- skill section start -->
+            <section class="skills">
+              <h3>Skills</h3>
+              <div class="skill__divider"></div>
+              <div class="skills_list">
+                <ul>
+                  <% for(let i=0; i<body.skill.length; i++) {%>
+                    <li>
+                      <%= body.skill[i]%>
+                    </li>
+                    <% } %>
+                </ul>
+              </div>
+            </section>
+            <!-- skill section end -->
+          </section>
+          <!-- professional_skills section end -->
+
+          <!-- professional divider dection start -->
+          <div class="professional_divider"></div>
+          <!-- professional divider dection end -->
+
+          <!-- professional_experience section start -->
+          <section class="professional_exp">
+            <h3>Projects</h3>
+            <div class="project_divider"></div>
+            <div class="projects_details">
+              <h5>
+                <%= body.project1 %>
+              </h5>
+              <p>
+                <%= body.project_description_1 %>
+              </p>
+            </div>
+            <div class="projects_details">
+              <h5>
+                <%= body.project2 %>
+              </h5>
+              <p>
+                <%= body.project_description_2 %>
+              </p>
+            </div>
+            <div class="projects_details">
+              <h5>
+                <%= body.project3 %>
+              </h5>
+              <p>
+                <%= body.project_description_3 %>
+              </p>
+            </div>
+            
+          </section>
+          <!-- professional_experience section end -->
+        </section>
+        <!-- professional_details section end -->
+      </section>
+      <!-- bottom section end -->
+    </main>
+    <%- include('partials/fontAwesomeScript') %>
+  </body>
+
+</html>

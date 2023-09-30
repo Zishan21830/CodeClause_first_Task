@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+  </head>
+  <body>
+    <form
+      method="post"
+      action="http://localhost:8000/resumebuilder"
+      class="center f_direction"
+    >
+      <!-- Personal Information start -->
+      <div class="personal_info">
+        <h2 class="text_align_center padding_on_heading">Personal Information</h2>
+        <div class="user_name d_flex">
+          <div class=" d_flex f_direction">
+            <span>firstname</span
+            ><input
+              type="text"
+              name="firstname"
+              placeholder="Enter your firstname"
+              required
+            />
+          </div>
+          <div class="d_flex f_direction input_width">
+            <span>lastname</span
+            ><input
+              type="text"
+              name="lastname"
+              placeholder="Enter your lastname"
+            />
+          </div>
+        </div>
+        <div class="social_links d_flex f_direction input_width">
+          <span>Passion</span
+            ><input
+              type="tel"
+              name="passion"
+              placeholder="Enter your passion"
+              required
+            />
+          <span>Conatact Number</span
+          ><input
+            type="tel"
+            name="phone"
+            placeholder="Enter your mobile number"
+            required
+          />
+          <span>Email</span
+          ><input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <span>Address</span
+          ><input
+            type="text"
+            name="address"
+            placeholder="Enter your address"
+          />
+        </div>
+
+        <div class="summary d_flex f_direction input_width">
+          <span>Summary</span
+          ><textarea
+            name="summary"
+            cols="100"
+            rows="10"
+            placeholder="Enter your summary"
+          ></textarea>
+        </div>
+      </div>
+      <!-- Personal Information end -->
+
+      <!-- Education section start -->
+      <div class="education">
+        <div class="edu edu_1 d_flex f_direction padding_on_heading">
+          <h2 class="text_align_center">Education</h2>
+          <span>Institute name</span>
+          <input
+            type="text"
+            name="education1"
+            placeholder="Enter your institute name"
+          />
+          <span>Course</span
+          ><input
+            type="text"
+            name="course_name1"
+            placeholder="Enter your course name"
+          />
+        </div>
+        <div class="edu_2 d_flex f_direction">
+          <span>Add more education details (optional)</span>
+          <span>Institute name</span>
+          <input
+            type="text"
+            name="education2"
+            placeholder="Enter your institute name"
+          />
+          <span>Course</span
+          ><input
+            type="text"
+            name="course_name2"
+            placeholder="Enter your course name"
+          />
+        </div>
+        <div class="skills padding_on_heading">
+          <h2 class="text_align_center p">Skills</h2>
+          <input type="text" name="skill" placeholder="Enter your skill 1" />
+          <input type="text" name="skill" placeholder="Enter your skill 2" />
+          <input type="text" name="skill" placeholder="Enter your skill 3" />
+          <input type="text" name="skill" placeholder="Enter your skill 4" />
+        </div>
+      </div>
+      <!-- Education section end -->
+
+      <!-- Project section start -->
+      <div class="projects d_flex f_direction">
+        <h2 class="text_align_center">projects</h2>
+        <div class="projects_details d_flex">
+          <div class="project d_flex f_direction">
+            <input type="text" name="project1" placeholder="Project name" />
+            <textarea
+              name="project_description_1"
+              placeholder="Enter project description"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="project d_flex f_direction">
+            <input type="text" name="project2" placeholder="Project name" />
+            <textarea
+              name="project_description_2"
+              placeholder="Enter project description"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="project d_flex f_direction">
+            <input type="text" name="project3" placeholder="Project name" />
+            <textarea
+              name="project_description_3"
+              placeholder="Enter project description"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Project section end -->
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
